@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import static javax.servlet.RequestDispatcher.ERROR_EXCEPTION;
+
 @Slf4j
 @Controller
 public class ErrorPageController {
@@ -22,4 +24,5 @@ public class ErrorPageController {
         log.info("errorPage 500");
         return "error-page/500";
     }
+
 }
